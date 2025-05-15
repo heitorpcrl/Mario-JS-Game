@@ -10,4 +10,6 @@ const jump = () => {
     }, 900);
 }
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keydown', jump)
+
+

@@ -7,12 +7,12 @@
 
 .game-board {
     width: 90%;
-    height: 500px;
+    height: 700px;
     border: 1px solid #333;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-
+    background: linear-gradient(to bottom, #87ceeb, #E0F6FF)
 }
 
 .pipe {
@@ -20,7 +20,7 @@
     bottom: 0;
     width: 80px;
     right: -80px;
-    animation: pipe-animation 2s infinite linear;
+    animation: pipe-animation 4s infinite linear;
     
 }
 
@@ -32,10 +32,20 @@
      
 }
 
+.clouds {
+    display: flex;
+    position:absolute;
+    width: 700px;
+    height: 100px;
+    height: fit-content;
+    left: 500px;
+    max-width: max-content;
+    
+
+}
+
 .jump{
-    animation: jump 500ms ease-out; 
-
-
+    animation: jump 750ms ease-out; 
 }
 
 
