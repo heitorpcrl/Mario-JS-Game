@@ -8,7 +8,8 @@
 .game-board {
     width: 90%;
     height: 700px;
-    border: 1px solid #333;
+    border: 5px solid #333;
+    border-style: dotted;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -90,5 +91,73 @@
 
     100%{
         bottom: 0;
+    }
+}
+
+.restart-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
+
+.restart-button:active {
+    background-color: #3d8b40;
+}
+
+.start-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    font-family: monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    z-index: 1000;
+}
+
+.start-screen p {
+    margin: 5px 0;
+}
+
+.coin {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: -60px;
+    bottom: 200px;
+    animation: coin-animation 4s infinite linear;
+    transition: opacity 0.3s ease-out;
+}
+
+.coin.collected {
+    opacity: 0;
+}
+
+@keyframes coin-animation {
+    from {
+        right: -60px;
+    }
+    to {
+        right: 100%;
     }
 }

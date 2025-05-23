@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/sound-controller.js" defer></script>
     <script src="/JS/animation-controller.js" defer></script>
+    <script src="/JS/game-controller.js" defer></script>
     <title>Mario-JS-game</title>
 
 </head>
-<body>
-
+<body style="background-color: #0000003c;">
     <div class="game-board">
-
         <img src="/IMG/mario.gif" class ="mario jump">
         <img src="/IMG/pipe.png" class="pipe">
         <img src="/IMG/clouds.png" class="clouds">
-        
+        <img src="/IMG/coin.png" class="coin">
+        <button id="restart-button" class="restart-button">Reiniciar Jogo</button>
+        <div id="start-screen" class="start-screen">
+            <p>Pressione qualquer tecla</p>
+            <p>para começar</p>
+        </div>
     </div>
 
-
-    
     <div class ="score-board">
- 
         <p>Pontuação: 00</p>
-        
     </div>
     
 </body>
